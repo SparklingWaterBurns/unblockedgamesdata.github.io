@@ -1,0 +1,10 @@
+body {
+        background-color: #a3dcff;
+        font-family: Helvetica;
+}
+hr {
+  height:2px;
+  border-width:0;
+  color:gray;
+  background-color:gray;
+}
