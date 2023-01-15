@@ -1,3 +1,3 @@
 // redirect
 console.log("Redirecting...")
-setTimeout(() => {  window.location.replace("http://www.w3schools.com"); }, 5000);
+setTimeout(() => {  window.location.replace("https://dasite-on-a-zero-budget.on.drv.tw/files/"); }, 52000);
