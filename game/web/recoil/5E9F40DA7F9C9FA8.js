@@ -1,0 +1,1 @@
+checkStartGame(); return false;
