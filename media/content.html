@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="utf-8">  
+    <title>  
+         Random meme 💀 
+    </title> 
+<style>
+    body {
+        background-color: black;
+        font-family: Helvetica;
+    }
+    div.stickynews {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+    div.stickyerr {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #ff0000;
+}
+   div.space {
+       margin: 30;
+}
+    video {
+     position: sticky;
+     height: 18%;
+     width: 18%;
+    }
+    button {
+      font-family: Helvetica;
+      font-size: 26px;
+    }
+/*video {
+    position: absolute;
+    overflow: hidden; 
+    width: auto;
+    height: auto;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    bottom: 0;
+    display: block;
+    /*margin: 0 auto;*/
+}
+/*    .video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+} */
+/*.video-container video {
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%,-50%);
+} */
+    h1 {
+        color: white;
+    }
+    h2 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1> </h1> <!-- Here so CSS works for whatever reason -->
+    <center>
+        <div id="stickynotice" class=""></div>
+        <div id="content">
+            <noscript>
+                <img src="img/noscript.png">
+                <h1>You have javascript disabled.</h1>
+            </noscript>
+            <div id="topBarWrapper" class="space" style="background-color:grey;display:block;padding:10px;">
+                <button id="favorites" onClick="alert('WIP');">Favorites</button>
+                <button id="newvid" onClick="window.location.reload();">Next Video</button>
+            </div>
+            <div id="seperating" style="padding:20px;">
+            </div>
+            <div id="videoWrapper">
+                <video class="video-container" id="contentview" controls autoplay>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+           </div>
+            <div id="AdSideR" class="adright">
+                <img src="">
+            </div>
+            <div id="btnWrapper" class="space" style="background-color:grey;display:block;padding:10px;">
+                <button id="favoriteadd" onClick="alert('WIP');">Add to Favorites</button>
+                <button id="share" onClick="navigator.clipboard.writeText(window.location.href);">Share</button>
+            </div>
+            <div id="AdSideBottom">
+                <img src="">
+            </div>
+            <div id="infoWrapper" class="space" style="background-color:grey;display:block">
+                <p id="contact" style="color:black">To sumbit videos or report issues, contact ctayl2009@gmail.com</p>
+                <p id="version" style="color:black">BETA 0.2.0</p>
+            </div>
+        </div>
+    </center>
+</body>
+<script type="text/javascript">
+// DO NOT STEAL OR MODIFY
+var sessionId = Math.floor(Math.random() * 70001);
+document.cookie = "interestId=00000A; id=" + sessionId + "; fav1=0; fav2=0; fav3=0; fav4=0; fav5=0; fav6=0; fav7=0; fav8=0; fav9=0; fav10=0; fav11=0; fav12=0; favnum=0; expires=Thu, 18 Dec 2030 12:00:00 UTC";
+// How to create an interest ID:
+//   Levels: 
+// 0=false, 1=mid, 2=true, 3=undefined
+// A=Normal, B=Bad, C=Dangerous
+//   Digits
+// 1: skipsAnimals
+// 2: skipsGames
+// 3: skipsTV
+// 4: skipsMusic
+// 5: skipsLowQuality
+// 6(Uses letters): nicotineUser
+//  Example: 10120A, 02022A
+// TODO: Add a timer to time how long the client views the video, then add the timer and the videoId to the infoTable which can be used to compile an intresetID
+// infoTable stores information that can be used to choose what is best for the user
+// sqlserver/serverdata/*
+    //signup.php
+    //user.php
+    //accountaction.php
+    //login.php
+const infoTable = [
+    {   timeTaken : 0,
+        videoId : 0,
+        session : 0,
+    }
+]
+//function 0TimerEvent() {
+//var
+//}
+
+let videoId = Math.floor(Math.random() * 11);
+console.log(videoId);
+const sessionData = [
+    { sessionID : 0,
+      videoID : 0
+    }
+];
+sessionData[0] = sessionId;
+sessionData[1] = videoId;
+console.log(sessionData.toString());
+//function AddToFavorites(videoId) {
+//  if (getCookie("favnum"=="0")) {
+//      setCookie(fav1,videoId,365);
+//  } else if (getCookie("favnum"=="1")) {
+//      setCookie(fav2,videoId,365);
+//  }
+//}
+    //REMOVED
+//RemoveFromFavorites(videoId) {
+//TODO: Compile each fav cookie into an array, then use find function on the array and change any items value matching the videoId to 0, then change the cookies values to the arrays values.
+//}
+//missCheck
+/*$.ajax({
+    url:'js/browserCheck.js',
+    type:'HEAD',
+    error: function()
+    {
+        console.error("404: File not found: browserCheck.js")
+        document.body.innerHTML("<html><head><style>h3 { font-family: Helvetica;} </style></head><body><h3>Script not found</h3></body></html>");
+    },
+    success: function()
+    {
+        console.log("browserCheck.js loaded");
+    }
+});
+$.ajax({
+    url:'js/framework.js',
+    type:'HEAD',
+    error: function()
+    {
+        console.error("404: File not found: framework.js")
+        document.body.innerHTML("<html><head><style>h3 { font-family: Helvetica;} </style></head><body><h3>Script not found</h3></body></html>");
+    },
+    success: function()
+    {
+        console.log("framework.js loaded");
+    }
+});
+$.ajax({
+    url:'js/browserCheck.js',
+    type:'HEAD',
+    error: function()
+    {
+        console.error("404: File not found: browserCheck.js")
+        document.body.innerHTML("<html><head><style>h3 { font-family: Helvetica;} </style></head><body><h3>Script not found</h3></body></html>");
+    },
+    success: function()
+    {
+        console.log("browserCheck.js loaded");
+    }
+});
+$.ajax({
+    url:'js/data.js',
+    type:'HEAD',
+    error: function()
+    {
+        console.error("404: File not found: data.js")
+        document.body.innerHTML("<html><head><style>h3 { font-family: Helvetica;} </style></head><body><h3>Script not found</h3></body></html>");
+    },
+    success: function()
+    {
+        console.log("data.js loaded");
+    }
+});
+$.ajax({
+    url:'js/cmake_Reloaded.js',
+    type:'HEAD',
+    error: function()
+    {
+        console.error("404: File not found: cmake_Reloaded.js")
+        document.body.innerHTML("<html><head><style>h3 { font-family: Helvetica;} </style></head><body><h3>Script not found</h3></body></html>");
+    },
+    success: function()
+    {
+        console.log("cmake_Reloaded.js loaded");
+    }
+}); */
+var vidobj = document.getElementById('contentview');
+vidobj.src = 'https://sparklingwaterburns.github.io/unblockedgamesdata.github.io/media/video/' + videoId + '.mp4';
+//set the video
+</script>
+<script src="js/browserCheck.js"></script>
+<script src="js/framework.js"></script>
+<script src="js/cmake_Reloaded.js"></script>
+<script src="js/frameworkData/data.js"></script>
+<script src="js/signs.js"></script>
+<!-- <script src="js/justLoading.js"></script> -->
+<!-- <script src="js/missCheck.js"></script> -->
+</html>
