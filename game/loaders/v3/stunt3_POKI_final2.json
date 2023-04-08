@@ -1,0 +1,15 @@
+{
+"companyName": "Hyperkani",
+"productName": "StuntCar3",
+"productVersion": "3.18",
+"dataUrl": "stunt3_POKI_final2.data.unityweb",
+"wasmCodeUrl": "stunt3_POKI_final2.wasm.code.unityweb",
+"wasmFrameworkUrl": "stunt3_POKI_final2.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.0f1"
+}
